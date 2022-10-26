@@ -1,0 +1,46 @@
+PROIECT SIMA -- SCHITE
+
+Use cases
+//HR modifies contract: a user that applied for a position can be hired as a cashier 
+//a cashier can be promoted to the rank of manager
+//a manager can be demoted to the rank of a cashier
+
+Viewer:
+Cum vede lista de produse:
+	Intra pe pagina de Index(vezi mokup) si apasa pe butonul de "produse" 
+	Se deschide "lista" de produse 
+Cum isi face cont:
+	Apasa butonul de "log in or sign up"
+	Se deschide formul de sign up in care isi completeaza datele
+	apasa butonul de sign up si se updateaza tabelul "conturi" din baza de date
+	
+User:
+	Poate vedeea lista cu joburi
+	poate selecta o pozitie si sa vada detalii
+	in acelasi form e un buton: "aplica oentru aceasta pozitie"
+	Butonul trimite la HR o cerere
+	
+HR:
+	are o pagiina in care vede toate posturile la care userii au aplicat
+	Daca crede ca candidatul intruneste criteriile, trimite o cere la CEO pentru aprobare training, daca trainingul nu a aprobat, userul primeste notificare ca nu a primit postul
+	Daca e aprobat, dupa ce trainingul e complet, HR marcheaza ca trainingul e complet iar procesul de angajare se finalizeaza
+	
+	La cerera CEO, modifica datele contractelor
+		Are o lista cu cereri de la CEO
+		Fiecare cerere e un form
+		In functie de tipul cererii butoanele au diferite functii
+			ex: la cererea de concediere, butonnul faca angajatul un user normal
+				la carerea de promovare, butonuk schimba titlul jobului in cel dorit(necesita detaliere)
+		
+	
+
+User Stories
+Viewer: poate sa isi faca cont si sa vada lista de produse
+userul are cont si poate aplica pentru pozitii(casier, manager, admin, HR)
+casierul vinde produse si se ocupa de retururi
+HR: are o lista cu aplicantii pentru pozitii, face un request pentru training(pentru userul candidat), upgrade la contul userului de la user normal la casier sau alte pozitii
+	dupa ce primeste cerere de la CEO sa concedieze un angajat o si face
+	poate modifica contracte (modifica pozitia angajatului, durata contractului si salariul)
+System: tine istoricul vanzarilor, pontajul angajatilor
+CEO: Poate vedea stocurile, statistici(cele mai mici x stocuri, cele mai bine vandute x produse, cheltuieli si incasari), poate vedea training requesturi facute de HR si poate face cereri pentru concedieri sau promovari
+Admin: adauga stocuri, seteaza preturi, scoate sau adauga produse noi, schimba parole, 
