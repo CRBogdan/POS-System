@@ -1,1 +1,7 @@
 https://app.diagrams.net/
+
+User Stories
+https://docs.google.com/document/d/1_EmcBXaLq5HuAzEhiJ8CoEO1OqOM-bbWRC1x7OVgP20/edit
+
+Use Cases
+https://docs.google.com/document/d/1OduzNZifVCmPihco82rYvUXIIB0yMEEITc07fxQhUmo/edit
