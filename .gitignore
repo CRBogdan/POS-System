@@ -21,3 +21,33 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+### IntelliJ IDEA ###
+.idea/*
+.idea/modules.xml
+.idea/jarRepositories.xml
+.idea/compiler.xml
+.idea/libraries/
+*.iws
+*.iml
+*.ipr
+out/
+!**/main/**/out/
+!**/test/**/out/
+
+### VS Code ###
+.vscode/
+/.github/workflows/node_modules/*
+
+## Gradle
+build/
+/local.properties
+.gradle/
+gradle-app.setting
+!gradle/wrapper/gradle-wrapper.jar
+!**/main/**/build/
+!**/test/**/build/
+
+## OS Specific
+.DS_Store
+Thumbs.db
